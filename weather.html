@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <title>Dự báo thời tiết</title>
+    <script src=""></script>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+<body>
+    <script type="text/javascript">
+        // Disable window resizing
+        window.addEventListener('resize', function(event){
+          window.resizeTo(screen.width,screen.height);
+        });
+      </script>
+    <div class="Mainform">
+        <section id="header">
+            <div class="title">
+                    <img src="./icon/VietNam.jpg" alt="" class="logo" width="40" height="40">
+                <div class="search">
+                    <img src="./icon/search.png" alt="" width="20" height="20">
+                    <form method="post" class="input">
+                        <input type="text" placeholder="Enter city..." >
+                    </form>
+                </div>
+            </div>  
+        </section>
+        <section id="top">
+            <div class="current">
+                    <h1 class="day-status">MONDAY</h1>
+                    <div class="city">
+                        <p><img src="./icon/positon.png" class="icon_city" width="20" height="20"/>HO CHI MINH CITY</p>
+                    </div>
+                    <div class="Temperature">
+                        <img src="./icon/themor.png" class="Temperature" alt="" width="90" height="90">
+                        <h1 class="Temperature">37 &deg;C</h1>
+                    </div>
+                    <img src="./icon/rain.png" class="status" alt="" width="200" height="200">
+            </div>
+            <div class="Day  ">
+                <div class="today ">
+                    <h1>TODAY</h1>
+                    <img src="./icon/rain.png" class="icon" alt="rain" width="32" height="32"/>
+                    <img src="./icon/themor.png" class="icon" alt="themor" width="32" height="32"/>
+                    <img src="./icon/wind.png" class="icon" alt="wind" width="32" height="32"/>
+                </div>
+                <div class="tomorrow">
+                    <h1>TOMORROW</h1>
+                    <img src="./icon/rain.png" class="icon" alt="rain" width="32" height="32"/>
+                    <img src="./icon/themor.png" class="icon" alt="themor" width="32" height="32"/>
+                    <img src="./icon/wind.png" class="icon" alt="wind" width="32" height="32"/>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="bottom">
+            <div class="weekwarp">
+                <div class="week">
+                    <h2>Monday</h2>
+                    <img src="./icon/rain.png"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3>
+                    <input type="range" value="40&deg;C" name="" id="Temperature-range"> 
+                </div>
+                <div class="week">
+                    <h2>Tuesday</h2>
+                    <img src="./icon/rain.png"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3> 
+                </div>
+                <div class="week">
+                    <h2>Wednesday</h2>
+                    <img src="./icon/rain.png"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3> 
+                </div>
+                <div class="week">
+                    <h2>Thursday </h2>
+                    <img src="./icon/rain.png"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3> 
+                </div>
+                <div class="week">
+                    <h2>Friday</h2>
+                    <img src="./icon/rain.png"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3> 
+                </div>
+                <div class="week">
+                    <h2>Saturday</h2>
+                    <img src="./icon/rain.png"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3> 
+                </div>
+                <div class="week">
+                    <h2>Sunday</h2>
+                    <img src="./icon/sun.jpg"  alt="rain" width="32" height="32"/>
+                    <h3>37 &deg;C</h3> 
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
